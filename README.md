@@ -27,5 +27,3 @@ Work in progress for ^ taking powers
 `cd ..`
 
 `rm -rf talc`
-
-`rm talcInstall`
