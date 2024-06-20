@@ -16,9 +16,9 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 Work in progress for ^ taking powers
 
 # Install
-`git clone https://github.com/DOTADER/talc.git talc`
-`cd talc`
-`chmod +x talcInstall.sh`
-`./talcInstall.sh`
-`cd ..`
-`rm -rf talc`
+####`git clone https://github.com/DOTADER/talc.git talc`
+####`cd talc`
+####`chmod +x talcInstall.sh`
+####`./talcInstall.sh`
+####`cd ..`
+####`rm -rf talc`
