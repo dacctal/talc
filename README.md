@@ -16,14 +16,16 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 Work in progress for ^ taking powers
 
 # Install
-`git clone https://github.com/DOTADER/talc.git talc`
+```
+git clone https://github.com/DOTADER/talc.git talc
 
-`cd talc`
+cd talc
 
-`clang -o talc main.c`
+clang -o talc main.c
 
-`sudo cp talc /usr/local/bin`
+sudo cp talc /usr/local/bin
 
-`cd ..`
+cd ..
 
-`rm -rf talc`
+rm -rf talc
+```
