@@ -9,6 +9,7 @@ void loop(){
         int num2;
         char operation;
 
+        system("clear");
         printf("Equation (ex. 1 + 2): ");
         scanf("%d %c %d", &num1, &operation, &num2);
 
@@ -28,6 +29,7 @@ void loop(){
         }
         if(option == 'u'){
             while(option != 'q'){
+                system("clear");
                 num1 = result;
                 printf("Equation (ex. + 2): ");
                 scanf(" %c %d", &operation, &num2);
@@ -52,4 +54,5 @@ void loop(){
             }
         }
     }
+    system("clear");
 }
