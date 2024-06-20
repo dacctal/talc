@@ -20,6 +20,12 @@ Work in progress for ^ taking powers
 
 `cd talc`
 
-`./talcInstall`
+`clang -o talc main.c`
+
+`sudo cp talc /usr/local/bin`
+
+`cd ..`
+
+`rm -rf talc`
 
 `rm talcInstall`
