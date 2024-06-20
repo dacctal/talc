@@ -44,7 +44,7 @@ void loop(){
                     break;
                 }
                 if(option == 'r'){
-                    continue;
+                    break;
                 }
                 if(option == 'u'){
                     continue;
