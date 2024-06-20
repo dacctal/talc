@@ -12,8 +12,7 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 ### - Subtract
 ### * Multiply
 ### / Divide
-### Other
-Work in progress for ^ taking powers
+### ^ Power
 
 # Install
 You should have the C language and clang installed already, and then you can run this code:
