@@ -22,7 +22,7 @@ git clone https://github.com/DOTADER/talc.git talc
 
 cd talc
 
-clang -o talc main.c
+clang -o talc main.c -lm
 
 sudo cp talc /usr/local/bin
 
