@@ -16,6 +16,7 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 Work in progress for ^ taking powers
 
 # Install
+You should have the C language and clang installed already, and then you can run this code:
 ```
 git clone https://github.com/DOTADER/talc.git talc
 
