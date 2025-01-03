@@ -14,8 +14,8 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 ### / Divide
 ### ^ Power
 
-# Install
-You should have the C language and clang installed already, and then you can run this code:
+# Install (Linux)
+You'll need to have the C language, clang, and git installed already, and then you can run this code:
 ```
 git clone https://github.com/DOTADER/talc.git talc
 
