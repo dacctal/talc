@@ -29,3 +29,8 @@ cd ..
 
 rm -rf talc
 ```
+
+Alternatively, you could use gcc in place of clang:
+```
+gcc -o talc main.c -lm
+```
