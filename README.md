@@ -8,7 +8,7 @@ A simple CLI single-operation calculator tool
 talc 1 + 1
 ```
 
-As of now, this will not work:
+As of now, this will **not** work:
 ```
 talc 1+1
 ```
