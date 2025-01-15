@@ -4,7 +4,9 @@ A simple CLI single-operation calculator tool
 # Usage
 ## talc
 `talc` doesn't work on its own - you need to append the equation to the end of the command, with spaces around the operation. For example:
-`talc 1 + 1`
+```
+talc 1 + 1
+```
 
 As of now, this will not work:
 ```
