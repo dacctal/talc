@@ -17,7 +17,7 @@ No more annoying syntax to remember. Just type "talc" and be on your way!
 # Install (Linux)
 You'll need to have the C language, clang, and git installed already, and then you can run this code:
 ```
-git clone https://github.com/DOTADER/talc.git talc
+git clone https://github.com/dotclb/talc.git talc
 
 cd talc
 
@@ -32,5 +32,13 @@ rm -rf talc
 
 Alternatively, you could use gcc in place of clang:
 ```
+git clone https://github.com/dotclb/talc.git talc
+
+cd talc
+
 gcc -o talc main.c -lm
+
+cd ..
+
+rm -rf talc
 ```
