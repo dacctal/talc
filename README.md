@@ -1,11 +1,15 @@
 # talc
-A simple CLI calculator tool
+A simple CLI single-operation calculator tool
 
 # Usage
 ## talc
-`talc` launches the calculator prompt
-## That's it
-No more annoying syntax to remember. Just type "talc" and be on your way!
+`talc` doesn't work on its own - you need to append the equation to the end of the command, with spaces around the operation. For example:
+`talc 1 + 1`
+
+As of now, this will not work:
+```
+talc 1+1
+```
 
 # Operation Support
 ### + Add

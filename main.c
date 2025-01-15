@@ -6,8 +6,10 @@ int main(int argc, char *argv[]) {
   float num2;
   char operation;
 
-  if(argc < 0) {
-    printf("Usage: %s 1 + 1", argv[0]);
+  if(argc <= 3) {
+    printf(
+      "\n \t talc \n \t The single-operation terminal calculator \n\n \t Usage: %s 1 + 1 \n\n\n",
+      argv[0]);
     return 1;
   }
 
