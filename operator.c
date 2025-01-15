@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-int operate(int num1, char operation, int num2){
+float operate(float num1, char operation, float num2){
 
-    int result;
+    float result;
 
     if(operation == '+'){
         result = num1 + num2;
