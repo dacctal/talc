@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 #include "operator.c"
+#include "data.c"
 
 int main(int argc, char *argv[]) {
   float num1;
   float num2;
   char operation;
 
-  if(argc <= 3) {
+  if(argc == 1) {
     printf(
       "\n \t talc \n \t The single-operation terminal calculator \n\n \t Usage: %s 1 + 1 \n\n\n",
       argv[0]);
@@ -18,17 +20,27 @@ int main(int argc, char *argv[]) {
   //    printf("%s \n", argv[i]);
   //  }
 
-  sscanf(argv[1], "%f", &num1);
-  sscanf(argv[2], "%c", &operation);
-  sscanf(argv[3], "%f", &num2);
+  if(argc == 2) {
+    char option;
+    sscanf(argv[1], "%c", &option);
+    if(strcmp(&option, "l") == 0) {
+      readData();
+    }
+  } else {
+    sscanf(argv[1], "%f", &num1);
+    sscanf(argv[2], "%c", &operation);
+    sscanf(argv[3], "%f", &num2);
 
-  //  printf("equasion:\n");
-  //  printf("%d\n", num1);
-  //  printf("%c\n", operation);
-  //  printf("%d\n", num2);
+    //  printf("equasion:\n");
+    //  printf("%d\n", num1);
+    //  printf("%c\n", operation);
+    //  printf("%d\n", num2);
 
-  float result = operate(num1, operation, num2);
-  printf("%f\n", result);
+    float result = operate(num1, operation, num2);
+    printf("%f\n", result);
+
+    storeData(num1, operation, num2, result);
+  }
 
   return 0;
 
