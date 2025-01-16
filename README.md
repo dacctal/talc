@@ -13,6 +13,11 @@ As of now, this will **not** work:
 talc 1+1
 ```
 
+You can also list the history of equasions you've done:
+```
+talc l
+```
+
 # Operation Support
 ### + Add
 ### - Subtract
