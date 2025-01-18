@@ -13,7 +13,7 @@ float operate(float num1, char operation, float num2){
         result = num1 - num2;
     }
 
-    if(operation == '*'){
+    if(operation == '*' || operation == 't'){
         result = num1 * num2;
     }
 

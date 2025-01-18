@@ -22,11 +22,15 @@ talc l
 ### + Add
 ### - Subtract
 ### * Multiply
+**This one is only possible inside quotes:**
+```
+talc 2 '*' 2
+```
 ### / Divide
 ### ^ Power
 
 # Install (Linux)
-You'll need to have the C language, clang, and git installed already, and then you can run this code:
+You'll need to have the C language, clang (or gcc), and git installed already, and then you can run this code:
 ```
 git clone https://github.com/dotclb/talc.git talc
 
