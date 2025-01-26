@@ -44,7 +44,6 @@ int main(int argc, char *argv[]) {
 
 
     float result = operate(num1, operation, num2);
-    printf("%f\n", result);
 
     writeFile(num1, operation, num2, result);
 

@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 
-const char * makeDir(const char *home) {
+const char * makeDirectory(const char *home) {
 
-  const char *dir = ".talc";
+  const char *dir = ".local/share/talc";
   static char fullPath[1024];
 
   snprintf(fullPath, sizeof(fullPath), "%s/%s", home, dir);
@@ -33,7 +33,7 @@ const char * makeDir(const char *home) {
 
 
 
-void checkDir(char fullPath[], const char *dir) {
+void checkDirectory(char fullPath[], const char *dir) {
 
   struct stat dir_info;
 
@@ -89,19 +89,17 @@ int getAddress(const char *filePath) {
 void readFile() {
 
   const char *home = getHome();
-  const char *dir = makeDir(home);
+  const char *dir = makeDirectory(home);
 
   char filePath[1024];
   snprintf(filePath, sizeof(filePath), "%s/%s", dir, "history.txt");
 
   FILE *file = fopen(filePath, "r");
 
-  // ------ DEBUG ------
-  // if(file == NULL) {
-  //   fprintf(stderr, "ERROR: Unable to open file '%s'.\n", filePath);
-  //   exit(1);
-  // }
-  // -------------------
+  if(file == NULL) {
+    fprintf(stderr, "ERROR: Unable to open file '%s'.\n", filePath);
+    exit(1);
+  }
 
   char buffer[1024];
 
@@ -118,7 +116,7 @@ void readFile() {
 void writeFile(float num1, char operation, float num2, float result) {
 
   const char *home = getHome();
-  const char *dir = makeDir(home);
+  const char *dir = makeDirectory(home);
 
   char filePath[1024];
   snprintf(filePath, sizeof(filePath), "%s/%s", dir, "history.txt");
