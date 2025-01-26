@@ -123,12 +123,10 @@ void writeFile(float num1, char operation, float num2, float result) {
 
   FILE *history = fopen(filePath, "a");
 
-  // ------ DEBUG ------
-  // if (history == NULL) {
-  //   fprintf(stderr, "Error: Unable to open file '%s'.\n", filePath);
-  //   exit(1);
-  // }
-  // -------------------
+  if (history == NULL) {
+    fprintf(stderr, "Error: Unable to open file '%s'.\n", filePath);
+    exit(1);
+  }
 
   int address = getAddress(filePath);
 
