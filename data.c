@@ -26,7 +26,7 @@ const char * makeDirectory(const char *home) {
   // -------------------
 
 
-  
+
   return fullPath;
 
 }
@@ -66,22 +66,22 @@ const char * getHome() {
 
 int getAddress(const char *filePath) {
 
-    FILE *file = fopen(filePath, "r");
+  FILE *file = fopen(filePath, "r");
 
-    if (file == NULL) {
-        return 0;
-    }
+  if (file == NULL) {
+    return 0;
+  }
 
-    int lines = 0;
-    char buffer[1024];
+  int lines = 0;
+  char buffer[1024];
 
-    while (fgets(buffer, sizeof(buffer), file)) {
-        lines++;
-    }
+  while (fgets(buffer, sizeof(buffer), file)) {
+    lines++;
+  }
 
-    fclose(file);
+  fclose(file);
 
-    return lines;
+  return lines;
 }
 
 
