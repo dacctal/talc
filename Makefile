@@ -1,22 +1,21 @@
 CC      = gcc
-CFLAGS  = -g -march=native
 RM      = rm -f
-PREFIX  = /usr/local/bin
+PREFIX  ?= /usr/local
 
 default: all
 
 all: talc
 
 talc: main.c
-	$(CC) $(CFLAGS) -o talc main.c
+	$(CC) -o talc main.c
 	chmod +x talc
 
 install: talc
-	install -d $(DESTDIR)$(PREFIX)
-	install -m 755 talc $(DESTDIR)$(PREFIX)/talc
+	install -d $(DESTDIR)$(PREFIX)/bin
+	install -m 755 talc $(DESTDIR)$(PREFIX)/bin/talc
 
 uninstall:
-	$(RM) $(DESTDIR)$(PREFIX)/talc
+	$(RM) $(DESTDIR)$(PREFIX)/bin/talc
 
 clean veryclean:
 	$(RM) talc
